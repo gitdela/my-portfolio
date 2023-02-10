@@ -13,13 +13,15 @@
         <div class="container">
             <nav>
                 <img src="images/logo.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>UI/UX Designer</p>
@@ -98,6 +100,73 @@
         </div>
     </div>
 </div>
+
+<!-- --------portfolio------------ -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla tempora aliquid adipisci facilis ab laborum illum sit voluptates sapiente obcaecati, hic debitis minus recusandae! Voluptatibus, nulla. Minus, optio voluptatum.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla tempora aliquid adipisci facilis ab laborum illum sit voluptates sapiente obcaecati, hic debitis minus recusandae! Voluptatibus, nulla. Minus, optio voluptatum.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla tempora aliquid adipisci facilis ab laborum illum sit voluptates sapiente obcaecati, hic debitis minus recusandae! Voluptatibus, nulla. Minus, optio voluptatum.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- -----------------contact-------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-envelope"></i>kendelanartey@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>+233 24 920 3351</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a href="images/ken_nartey_cv.pdf" download class="btn btn-2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn-2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-sharp fa-solid fa-copyright"></i> Ken. Made with <i class="fa-regular fa-heart"></i> by Ken  Nartey</p>
+    </div>
+</div>
 <script>
 
     let tabLinks = document.querySelectorAll('.tab-links');
@@ -113,7 +182,18 @@
         event.currentTarget.classList.add('active-link');
         document.getElementById(tabname).classList.add('active-tab');
     }
+</script>
 
+<script>
+    let sideMenu = document.getElementById('sidemenu');
+
+    function openmenu() {
+        sideMenu.style.right = '0px';
+    }
+
+    function closemenu() {
+        sideMenu.style.right = '-200px';
+    }
 </script>
 </body>
 </html>
