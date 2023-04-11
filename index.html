@@ -1,212 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kenneth Nartey: Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/89a1329a7c.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/89a1329a7c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/logo.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Front-End Web Developer</p>
-                <h1>Hi, I'm <span>Ken</span><br>Nartey From Ghana</h1>
-            </div>
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Front-End Web Developer</p>
+          <h1>Hi, I'm <span>Ken</span><br />Nartey From Ghana</h1>
         </div>
+      </div>
     </div>
 
     <!-- -----------------about------------------------------- -->
 
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.png" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Hi, I'm Ken Nartey, a front-end developer with a passion for creating highly functional yet minimalistic web pages. I'm a fast learner who pays close attention to detail, which helps me create pixel-perfect designs that not only look great but are also optimized for performance and usability. <br> In 2022, I quit my digital sales job to focus on software engineering, and it has been an incredible journey. I've had the opportunity to work on exciting projects and have learned a great deal about web development. I have experience in HTML, CSS, JavaScript, and various front-end frameworks like React and Bootstrap. I'm dedicated to staying up-to-date with the latest trends and technologies in the industry, and I'm always looking for new challenges to further develop my skills. I believe that every project is an opportunity to create something beautiful and functional, and I'm excited to bring my expertise to your next project.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>HTML</span><br>Semantic HTML, Accessibility, Search Engine Optimization</li>
-                            <li><span>CSS</span><br>Flexbox, CSS Grid, Bootstrap, Responsive Design</li>
-                            <li><span>JavaScript</span><br>React, Typescript, Fetch API</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2022 -  Current</span><br>Learning Web Development (Self-taught)</li>
-                            <li><span>2019 - 2021</span><br>Website/Digital Sales Manager, Raincoat Roofing Systems, Accra</li>
-                            <li><span>2017 - 2018</span><br>Volunteered as a HTML Teacher, Mawuli School, Ho</li>
-                            <li><span>2016 - 2017</span><br>Telecommunication Engineer at Admintelecom Academy, East Legon</li>
-                            <li><span>2013 - 2013</span><br>Volunteered as an ICT Tutor, Bright Future JHS, Keta</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2017</span><br>BSc. Telecommunication Engineering</li>
-                            <li><span>2016</span><br>Fiber Optic Practices</li>
-                            <li><span>2016</span><br>Microwave Antenna Installation</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/me.jpeg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi, I'm Ken Nartey, a self-taught front-end developer with a
+              passion for creating highly functional yet minimalist web pages.
+              I'm a fast learner who pays close attention to detail, which helps
+              me create pixel-perfect designs that not only look great but are
+              also optimized for performance and usability. <br />
+              In 2022, I quit my digital sales job to focus on software
+              engineering, and it has been an incredible journey. I've had the
+              opportunity to work on exciting projects and have learned a great
+              deal about web development. I have experience in HTML, CSS,
+              JavaScript, and various front-end frameworks like React and
+              Bootstrap and Tailwind CSS. I'm dedicated to staying up-to-date
+              with the latest trends and technologies in the industry, and I'm
+              always looking for new challenges to further develop my skills. I
+              believe that every project is an opportunity to create something
+              beautiful and functional, and I'm excited to bring my expertise to
+              your next project. You can check out my blog where I write about
+              my journey in web development on
+              <a href="http://selftalkdeveloper.medium.com">Medium</a>.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>HTML</span><br />Semantic HTML, Accessibility, Search
+                  Engine Optimization
+                </li>
+                <li>
+                  <span>CSS</span><br />Flexbox, CSS Grid, Bootstrap, Responsive
+                  Design
+                </li>
+                <li>
+                  <span>JavaScript</span><br />React, Typescript, Fetch API
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022 - Current</span><br />Learning Web Development
+                  (Self-taught)
+                </li>
+                <li>
+                  <span>2019 - 2021</span><br />Website/Digital Sales Manager,
+                  Raincoat Roofing Systems, Accra
+                </li>
+                <li>
+                  <span>2017 - 2018</span><br />Volunteered as a HTML Teacher,
+                  Mawuli School, Ho
+                </li>
+                <li>
+                  <span>2016 - 2017</span><br />Telecommunication Engineer at
+                  Admintelecom Academy, East Legon
+                </li>
+                <li>
+                  <span>2013 - 2013</span><br />Volunteered as an ICT Tutor,
+                  Bright Future JHS, Keta
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2017</span><br />BSc. Telecommunication Engineering
+                </li>
+                <li><span>2016</span><br />Fiber Optic Practices</li>
+                <li><span>2016</span><br />Microwave Antenna Installation</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-<!-- ---------------services------------- -->
+    <!-- ---------------services------------- -->
 
-<div id="services">
-    <div class="container">
+    <div id="services">
+      <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
-            <div>
-                <i class="fa-sharp fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>I specialize in using HTML, CSS, and JavaScript to create responsive designs that function across different devices and browsers. I focus on delivering an exceptional user experience by paying attention to details, such as typography, color schemes, and navigation. My design service includes wireframing, prototyping, and development, as well as ongoing maintenance and support. I pride myself on delivering high-quality work while maintaining clear communication with my clients throughout the design process.</p>
-                <!-- <a href="#">Learn More...</a> -->
-            </div>
-            <div>
-                <i class="fa-sharp fa-solid fa-crop"></i>
-                <h2>UI/UX Design</h2>
-                <p>My design process starts with research, where I gain an understanding of the target users, their needs, and the problem that the design aims to solve. I then create  prototypes, which I test with users to ensure that the design is user-friendly and functional. Once the design is finalized, I use tools such as Figma and Adobe XD to create high-fidelity designs that are ready for development. My design service includes a focus on user experience, with attention to details such as typography, color schemes, and layout. I pride myself on delivering high-quality work that meets the needs of my clients and their users.</p>
-                <!-- <a href="#">Learn More...</a> -->
-            </div>
+          <div>
+            <i class="fa-sharp fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I specialize in using HTML, CSS, and JavaScript to create
+              responsive designs that function across different devices and
+              browsers. I focus on delivering an exceptional user experience by
+              paying attention to details, such as typography, color schemes,
+              and navigation. My design service includes wireframing,
+              prototyping, and development, as well as ongoing maintenance and
+              support. I pride myself on delivering high-quality work while
+              maintaining clear communication with my clients throughout the
+              design process.
+            </p>
+            <!-- <a href="#">Learn More...</a> -->
+          </div>
+          <div>
+            <i class="fa-sharp fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              My design process starts with research, where I gain an
+              understanding of the target users, their needs, and the problem
+              that the design aims to solve. I then create prototypes, which I
+              test with users to ensure that the design is user-friendly and
+              functional. Once the design is finalized, I use tools such as
+              Figma and Adobe XD to create high-fidelity designs that are ready
+              for development. My design service includes a focus on user
+              experience, with attention to details such as typography, color
+              schemes, and layout. I pride myself on delivering high-quality
+              work that meets the needs of my clients and their users.
+            </p>
+            <!-- <a href="#">Learn More...</a> -->
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<!-- --------portfolio------------ -->
+    <!-- --------portfolio------------ -->
 
-<div id="portfolio">
-    <div class="container">
+    <div id="portfolio">
+      <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
-            <div class="work">
-                <img src="images/work-1.png" alt="">
-                <div class="layer">
-                    <h3>My Portfolio Website</h3>
-                    <p>This is a project I developed strictly using HTML, CSS, and very little JavaScript</p>
-                    <a href="https://gitdela.github.io/my-portfolio/"><i class="fa-solid fa-link"></i></a>
-                </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>E-commerce Website</h3>
+              <p>
+                This eCommerce website uses HTML, CSS, and JavaScript to provide
+                a modern and intuitive shopping experience. Customers can browse
+                products, add items to their cart, and checkout securely. It
+                offers a search and filtering option and a detailed product
+                information.
+              </p>
+              <a href="https://gitdela.github.io/e-commerce-pf/"
+                ><i class="fa-solid fa-link"></i
+              ></a>
             </div>
-            <div class="work">
-                <img src="images/work-2.png" alt="">
-                <div class="layer">
-                    <h3>Etch-A-Sketch</h3>
-                    <p>This was a project from <a href="https://www.theodinproject.com">The Odin Project.</a>It was mainly to demonstrate DOM Manipulation</p>
-                    <a href="https://gitdela.github.io/etch-a-sketch/"><i class="fa-solid fa-link"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="images/work-1.png" alt="" />
+            <div class="layer">
+              <h3>My Portfolio Website</h3>
+              <p>
+                This is a project I developed strictly using HTML, CSS, and very
+                little JavaScript
+              </p>
+              <a href="https://gitdela.github.io/my-portfolio/"
+                ><i class="fa-solid fa-link"></i
+              ></a>
             </div>
-            <div class="work">
-                <img src="images/work-3.png" alt="">
-                <div class="layer">
-                    <h3>A Landing Page</h3>
-                    <p>The project was built entirely using HTML and CSS, without any additional frameworks or libraries, to improve my fundamental understanding of web development</p>
-                    <a href="https://gitdela.github.io/odin-landing-page/"><i class="fa-solid fa-link"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="" />
+            <div class="layer">
+              <h3>Simple Calculator (React)</h3>
+              <p>
+                The React calculator app is a simple calculator built with
+                React. The app allows users to perform basic arithmetic
+                operations such as addition, subtraction, multiplication, and
+                division. The app has a simple, user-friendly interface that
+                allows users to enter numbers and operators using a keypad. The
+                app provides accurate results and allows users to clear the
+                calculator screen with a single click.
+              </p>
+              <a href="https://github.com/gitdela/react-calc/"
+                ><i class="fa-solid fa-link"></i
+              ></a>
             </div>
+          </div>
         </div>
         <a href="#" class="btn">See more</a>
+      </div>
     </div>
-</div>
 
-<!-- -----------------contact-------------------- -->
+    <!-- -----------------contact-------------------- -->
 
-<div id="contact">
-    <div class="container">
+    <div id="contact">
+      <div class="container">
         <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-sharp fa-solid fa-envelope"></i>kendelanartey@gmail.com</p>
-                <p><i class="fa-sharp fa-solid fa-phone"></i>+233 24 920 3351</p>
-                <div class="social-icons">
-                    <a href="https://github.com/gitdela"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://twitter.com/KenNartey"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
-                <a href="images/ken_nartey_cv.pdf" download class="btn btn-2">Download CV</a>
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-sharp fa-solid fa-envelope"></i
+              >kendelanartey@gmail.com
+            </p>
+            <p><i class="fa-sharp fa-solid fa-phone"></i>+233 24 920 3351</p>
+            <div class="social-icons">
+              <a href="https://github.com/gitdela"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://twitter.com/KenNartey"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://web.whatsapp.com/"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn-2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
+            <a href="pdfs/ken_nartey_cv_hubtel.pdf" download class="btn btn-2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn-2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright <i class="fa-sharp fa-solid fa-copyright"></i> Ken. Made
+          with <i class="fa-regular fa-heart"></i> by Ken Nartey
+        </p>
+      </div>
     </div>
-    <div class="copyright">
-        <p>Copyright <i class="fa-sharp fa-solid fa-copyright"></i> Ken. Made with <i class="fa-regular fa-heart"></i> by Ken  Nartey</p>
-    </div>
-</div>
-<script>
+    <script>
+      let tabLinks = document.querySelectorAll('.tab-links');
+      let tabContents = document.querySelectorAll('.tab-contents');
 
-    let tabLinks = document.querySelectorAll('.tab-links');
-    let tabContents = document.querySelectorAll('.tab-contents');
-
-    function opentab(tabname) {
-        for(tablink of tabLinks) {
-            tablink.classList.remove('active-link');
+      function opentab(tabname) {
+        for (tablink of tabLinks) {
+          tablink.classList.remove('active-link');
         }
-        for(tabcontent of tabContents) {
-            tabcontent.classList.remove('active-tab');
+        for (tabcontent of tabContents) {
+          tabcontent.classList.remove('active-tab');
         }
         event.currentTarget.classList.add('active-link');
         document.getElementById(tabname).classList.add('active-tab');
-    }
-</script>
+      }
+    </script>
 
-<script>
-    let sideMenu = document.getElementById('sidemenu');
+    <script>
+      let sideMenu = document.getElementById('sidemenu');
 
-    function openmenu() {
+      function openmenu() {
         sideMenu.style.right = '0px';
-    }
+      }
 
-    function closemenu() {
+      function closemenu() {
         sideMenu.style.right = '-200px';
-    }
-</script>
+      }
+    </script>
 
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwXean4dduP8OjJ4Nqzz83jj27UH5MEK2z8OFK-sB4IU6omeFf18LG1k7Sl9b1qUP0U/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById('msg');
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = 'Messsage sent successfully!'
-            setTimeout(function(){
-                msg.innerHTML = '';
+    <script>
+      const scriptURL =
+        'https://script.google.com/macros/s/AKfycbwXean4dduP8OjJ4Nqzz83jj27UH5MEK2z8OFK-sB4IU6omeFf18LG1k7Sl9b1qUP0U/exec';
+      const form = document.forms['submit-to-google-sheet'];
+      const msg = document.getElementById('msg');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = 'Messsage sent successfully!';
+            setTimeout(function () {
+              msg.innerHTML = '';
             }, 2000);
             form.reset();
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-</body>
+          })
+          .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+  </body>
 </html>
